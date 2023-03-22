@@ -1,0 +1,40 @@
+.slider {
+  height: calc(100vh - 80px);
+  max-width: 100vw;
+  position: relative;
+
+  .container {
+    scrollbar-width: none; /* for Firefox */
+    overflow-y: scroll;
+    width: 300vw;
+    display: flex;
+    transition: all 1s ease;
+
+    img {
+      width: 100vw;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  .icons {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: fit-content;
+    display: flex;
+    bottom: 30px;
+    gap: 10px;
+
+    .icon {
+      width: 50px;
+      height: 50px;
+      border: 1px solid #ffff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+    }
+  }
+}
