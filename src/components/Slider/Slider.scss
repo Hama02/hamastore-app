@@ -2,10 +2,9 @@
   height: calc(100vh - 80px);
   max-width: 100vw;
   position: relative;
+  overflow: hidden;
 
   .container {
-    scrollbar-width: none; /* for Firefox */
-    overflow-y: scroll;
     width: 300vw;
     display: flex;
     transition: all 1s ease;
